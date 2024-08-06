@@ -17,11 +17,7 @@
     margin-bottom: 1rem;
     margin-top: 2rem;
     font-size: 4.2rem;
-    font-weight: 900;
-    background: linear-gradient(90deg,rgba(255,255,255,1)60%,rgba(255,255,255,0)110%);
-     -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text; 
-    
+    font-weight: 900;    
 }
 .info{
     font-size: 1.8rem;
