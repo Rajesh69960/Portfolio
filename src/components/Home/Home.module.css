@@ -1,0 +1,102 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 3rem;
+    margin: 0 10%
+}
+.contain{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #fff;
+    z-index: 1;
+}
+.title{
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+    font-size: 4.2rem;
+    font-weight: 900;
+    background: linear-gradient(90deg,rgba(255,255,255,1)60%,rgba(255,255,255,0)110%);
+     -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text; 
+    
+}
+.info{
+    font-size: 1.8rem;
+    margin-top: 2rem;
+}
+.contactBtn{
+    background-color:  rgb(77, 124, 212);
+    text-decoration: none;
+    border-radius:7rem;
+    padding: 0.8rem 1.2rem;
+    margin: 2rem 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+    box-shadow: 0,0,4px,0 rgba(0,0,0,0.3);
+    color: #fff;
+}
+.personImage{
+    width: 50%;
+    z-index: 1;
+    animation-name: float;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes float {
+    0%{
+        transform: translate(0,0px);
+
+    }
+    50%{
+        transform: translate(0,10px);
+    }
+    100%{
+        transform: translate(0,-0px);
+    }
+}
+.topBackBlur{
+    width: 50vw;
+    height: 50vh;
+    min-width: 350px;
+    min-width: 350px;
+    position: absolute;
+    top: -2vh;
+    left: -10vw;
+    border-radius: 47rem;
+    background: rgba(25,55,109,0.8);
+    filter: blur(6rem);
+}
+.bottomBackBlur{
+    width: 70vw;
+    height: 60vh;
+    min-width: 350px;
+    min-width: 350px;
+    z-index: 0;
+    position: absolute;
+    top: 20vh;
+    right: -25vw;
+    border-radius: 47rem;
+    background: rgba(20, 55, 109, 0.8);
+    filter: blur(6rem);
+}
+
+@media screen and (max-width:830px) {
+    .container{
+        flex-direction: column-reverse;
+    }
+    .contain{
+        text-align: center;
+    }
+   
+    .personImage{
+        width: 60%;
+    }
+    .contactBtn{
+        margin-left: 22vw;
+    }
+    
+}
