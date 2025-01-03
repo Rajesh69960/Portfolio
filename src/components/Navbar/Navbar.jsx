@@ -1,11 +1,11 @@
-import React from "react";
-import { useState } from "react";
-import styles from "./Navbar.module.css";
-import { RxHamburgerMenu } from "react-icons/rx";
-import { IoClose } from "react-icons/io5";
+import React from "react"
+import { useState } from "react"
+import styles from "./Navbar.module.css"
+import { RxHamburgerMenu } from "react-icons/rx"
+import { IoClose } from "react-icons/io5"
 
 const Navbar = () => {
-  const [openIcon, setOpenIcon] = useState(false);
+  const [openIcon, setOpenIcon] = useState(false)
   return (
     <div>
       <nav className={styles.navbar}>
@@ -42,7 +42,7 @@ const Navbar = () => {
         </div>
       </nav>
     </div>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar

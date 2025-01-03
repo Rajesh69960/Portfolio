@@ -1,8 +1,8 @@
-import React from "react";
-import styles from "./Footer.module.css";
-import mail from "../../assets/image 12.png";
-import linkd from "../../assets/image 13.png";
-import gitHub from "../../assets/image 14.png";
+import React from "react"
+import styles from "./Footer.module.css"
+import mail from "../../assets/image 12.png"
+import linkd from "../../assets/image 13.png"
+import gitHub from "../../assets/image 14.png"
 
 const Footer = () => {
   return (
@@ -21,7 +21,7 @@ const Footer = () => {
         </li>
         <li className={styles.link}>
           <img src={linkd} alt="linkedin icon" />
-          <a href="https://www.linkedin.com/Rajesh">
+          <a href="https://www.linkedin.com/in/rajeshpaswan6996">
             https://www.linkedin.com/Rajesh
           </a>
         </li>
@@ -33,7 +33,7 @@ const Footer = () => {
         </li>
       </ul>
     </footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer
